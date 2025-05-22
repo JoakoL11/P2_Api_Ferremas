@@ -20,12 +20,6 @@ API REST para la integración de servicios de FERREMAS, incluyendo gestión de p
 - **Stripe API** - Procesamiento de pagos
 - **Banco Central API** - Conversión de divisas
 
-## 📋 Requisitos Previos
-
-- Python 3.11+
-- Cuenta en Railway
-- Cuenta en Stripe (para pagos)
-- Git
 
 ## 🚀 Instalación y Despliegue
 
@@ -45,27 +39,8 @@ pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### 4. Desplegar en Railway
-```bash
-# Instalar Railway CLI
-npm install -g @railway/cli
-
-# Login y configurar
-railway login
-railway init
-railway up
-```
-
 ## 🔧 Configuración
 
-### Variables de Entorno (Railway)
-```
-FERREMAS_API_URL=https://ea2p2assets-production.up.railway.app
-FERREMAS_TOKEN=SaGrP9ojGS39hU9ljqbXxQ==
-BCH_API_URL=https://mindicador.cl/api
-STRIPE_SECRET_KEY=sk_test_tu_clave_aqui
-PORT=8000
-```
 
 ## 📚 Documentación
 
@@ -76,28 +51,6 @@ Una vez desplegado, accede a:
 
 ## 🔐 Autenticación
 
-### Usuarios de Prueba
-```json
-{
-  "admin": {
-    "username": "javier_thompson",
-    "password": "aONF4d6aNBIxRjlgjBRRzrS",
-    "role": "admin"
-  },
-  "cliente": {
-    "username": "ignacio_tapia",
-    "password": "f7rWChmQS1JYfThT",
-    "role": "cliente"
-  }
-}
-```
-
-### Ejemplo de Login
-```bash
-curl -X POST "https://tu-api.railway.app/auth/login" \
--H "Content-Type: application/json" \
--d '{"username": "javier_thompson", "password": "aONF4d6aNBIxRjlgjBRRzrS"}'
-```
 
 ## 🛡️ Roles y Permisos
 
@@ -129,13 +82,6 @@ curl -X POST "https://tu-api.railway.app/auth/login" \
 
 ## 🧪 Pruebas
 
-```bash
-# Ejecutar pruebas
-python test_api.py
-
-# Health check
-curl https://tu-api.railway.app/health
-```
 
 ## 📁 Estructura del Proyecto
 
