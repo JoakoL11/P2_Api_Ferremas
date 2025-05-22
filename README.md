@@ -143,12 +143,8 @@ curl https://tu-api.railway.app/health
 ferremas-api/
 ├── main.py              # API principal
 ├── requirements.txt     # Dependencias
-├── railway.toml        # Config Railway
 ├── README.md           # Este archivo
 ├── .gitignore          # Archivos ignorados
-└── docs/
-    ├── architecture.md # Documentación técnica
-    └── api-guide.md   # Guía de uso
 ```
 
 ## 🚨 Casos de Uso Implementados
