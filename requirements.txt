@@ -2,7 +2,7 @@ fastapi
 uvicorn[standard]
 httpx==0.25.2
 pydantic==2.5.0
-python-multipart==0.0.6
+python-multipart==0.0.31
 # Dependencias opcionales
 stripe==7.8.0
 python-jose[cryptography]==3.3.0
